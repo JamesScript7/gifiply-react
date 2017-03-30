@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 
-class Nav extends Component {
-
+class Options extends Component {
 	render() {
-		return (
+		return(
 			<div>
-				<p>"Nav"</p>
+				
+				
+
+
+
+
 			</div>
 			)
 	}
 }
-
-export default Nav;
