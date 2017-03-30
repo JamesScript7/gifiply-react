@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 
-class Options extends Component {
-	
+class Gifs extends Component {
 	render() {
 		return(
 			<div>
-				
-				<form>
-					
-				</form>
 
 			</div>
 			)
 	}
 }
 
-export default Options;
+export default Gifs;
