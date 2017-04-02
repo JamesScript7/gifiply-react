@@ -1,0 +1,191 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #F0F0F0;
+}
+
+p {
+  margin: 2px;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 2px solid #ccc;
+}
+
+/* Chrome */
+progress::-webkit-progress-bar {
+    background: #f5f5f5;
+}
+progress::-webkit-progress-value {
+    background: #5cb85c;
+}
+progress:not([value])::-webkit-progress-bar {
+  background: #fdd;
+}
+
+progress {
+	float: none;
+	width: 250px;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .size {
+    max-width: 250px;
+  }
+
+  div ul.gif-display {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  div ul.gif-display li {
+    list-style-type: none;
+    margin-top: 6px;
+    width: 100%;
+    text-align: center;
+  }
+
+  div.upload-box {
+    display: none;
+    width: 0px;
+    height: 0px;
+    margin: 0 auto;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .container {
+    width: 100%;
+  }
+
+  .size {
+    max-width: 275px;
+  }
+
+  .gif-box {
+    overflow-x: scroll;
+  }
+
+  .left {
+    margin-right: 10px;
+  }
+
+  .right {
+    margin-left: 10px;
+    align-self: flex-end;
+  }
+
+  div ul.gif-display {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    justify-content: flex-start;
+
+    margin-top: 70px;
+  }
+
+  div ul.gif-display li {
+    list-style-type: none;
+    margin-top: 6px;
+    padding-left: 6px;
+    padding-right: 4px;
+  }
+
+  div.upload-box {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 90px;
+    height: 90px;
+    margin: 10px auto;
+    border: 2px dashed grey;
+  }
+}
+
+div ul.gif-display {
+  background-color: #E8E8E8;
+}
+
+#create-gif-btn {
+  background-color: #333399;
+  border: 1px solid #330066;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  margin-top: 45px;
+  text-align: center;
+  justify-content: center;
+}
+
+div.nav-area ul {
+  list-style-type: none;
+  background-color: #333399;
+  width: 100%;
+  position: fixed;
+  margin-bottom: 0px;
+}
+
+div.nav-area ul li {
+  color: white;
+  float: left;
+  display: block;
+  padding: 6px;
+}
+
+div.nav-area ul li a {
+  font-size: 20px;
+  color: snow;
+  text-decoration: none;
+}
+
+div.right .text-area,
+div.right .btn-group,
+div.right .create-btn {
+  padding: 3px;
+}
+
+div#bar {
+  text-align: center;
+}
